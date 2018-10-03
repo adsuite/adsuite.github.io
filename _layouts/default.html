@@ -1,29 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-    <head>
-        <title>Rea - Html Responsive Template</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Template by Dry Themes" />
-        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
-        <meta name="author" content="DryThemes" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-        <link rel="shortcut icon" href="images/favicon.png" />    
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>	
-        <link rel="stylesheet" type="text/css"  href='css/clear.css' />
-        <link rel="stylesheet" type="text/css"  href='css/common.css' />
-        <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
-        <link rel="stylesheet" type="text/css"  href='css/carouFredSel.css' />
-        <link rel="stylesheet" type="text/css"  href='css/animated-headline.css' />        
-        <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />        
-        <link rel="stylesheet" type="text/css"  href='style.css' />
-
-        <!--[if lt IE 9]>
-                <script src="js/html5shiv.js"></script>                
-                <script src="js/respond.min.js"></script>                
-        <![endif]-->
-
-    </head>
+    {% include head.html %}    
     
     <body class="blog">
 
@@ -38,149 +15,16 @@
         </table>   
 
         <div class="menu-wraper center-relative">                
-            <nav id="header-main-menu" class="big-menu">
-                <ul class="main-menu sm sm-clean">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="features.html">Features</a>
-                    </li>                  
-                </ul>
-                <form role="search" class="search-form">
-                    <label>		
-                        <input autocomplete="off" type="search" class="search-field" placeholder="Search" value="" name="s" title="Search for:">                        
-                        <span class="search-info">search anything &amp; hit enter</span>
-                    </label>    
-                </form>
-            </nav>            
+            {% include nav.html %}          
             <div class="clear"></div>
-            <div class="menu-social">
-                <a href="#">
-                    <span class="fa fa-twitter"></span>
-                </a>
-                <a href="#">
-                    <span class="fa fa-behance"></span>
-                </a>
-                <a href="#">
-                    <span class="fa fa-dribbble"></span>
-                </a>
-                <a href="#">
-                    <span class="fa fa-facebook"></span>
-                </a>
-                <a href="#">
-                    <span class="fa fa-rss"></span>
-                </a>  
-            </div>
+            {% include social.html %}    
         </div>
 
-        <header class="header-holder center-relative relative">
-            <div class="header-logo">
-                <a href="index.html">
-                    <img src="images/reaDefaultLogo.png" alt="Rea">
-                </a>               
-            </div>
-            <div class="header-txt">
-                <h1 class="entry-title">
-                    <span class="entry-title cd-headline letters type">
-                        <span>pixel preciese</span>
-                        <span class="cd-words-wrapper waiting">
-                            <b class="is-visible">web resources</b>
-                            <b>psd files</b>
-                            <b>mockups</b>
-                        </span>
-                        <span class="sec-line">to suit all your needs.</span>                        
-                    </span>
-                </h1>            
-            </div>
-
-            <div class="toggle-holder absolute">
-                <div id="toggle" class="">
-                    <div class="first-menu-line"></div>
-                    <div class="second-menu-line"></div>
-                    <div class="third-menu-line"></div>
-                    <div class="fourth-menu-line"></div>
-                </div>
-            </div>
-            <div class="clear"></div>	
-        </header>
+        {% include header.html %} 
         
 {{content}}
 
-        <div class="clear"></div>
-
-        <footer class="footer">
-            <div class="content-1170 center-relative">			
-                <ul id="footer-sidebar">
-                    <li class="widget">
-                        <h4 class="widgettitle">Categories</h4>		
-                        <ul>
-                            <li class="cat-item">
-                                <a href="#">Branding</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Fonts</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Icons</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Misc</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Mockup</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Play</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Vectors</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Video</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="widget">
-                        <div class="menu-footer-menu-container">
-                            <ul id="menu-footer-menu" class="menu">
-                                <li>
-                                    <a href="about.html">About</a>
-                                </li>
-                                <li>
-                                    <a href="features.html">Features</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                </li>                                
-                            </ul>
-                        </div>
-                    </li>                    
-                    <li class="widget">
-                        <div class="textwidget custom-html-widget">
-                            <a href="#"><span class="fa fa-twitter"></span></a>
-                            <a href="#"><span class="fa fa-behance"></span></a>
-                            <a href="#"><span class="fa fa-dribbble"></span></a>
-                            <a href="#"><span class="fa fa-facebook"></span></a>
-                            <a href="#"><span class="fa fa-rss"></span></a>
-
-                            <br>
-                            <br>
-
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </div>
-                    </li>            
-                </ul>
-            </div>
-        </footer>
+        {% include footer.html %} 
 
         <!--Load JavaScript-->
         <script src="js/jquery.js"></script>			                                       
